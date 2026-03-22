@@ -1,0 +1,4 @@
+echo node_modules/ > .gitignore
+echo .expo/ >> .gitignore
+echo package-lock.json >> .gitignore
+echo .DS_Store >> .gitignore
