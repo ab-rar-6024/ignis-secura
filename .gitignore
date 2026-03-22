@@ -1,4 +1,10 @@
-echo node_modules/ > .gitignore
-echo .expo/ >> .gitignore
-echo package-lock.json >> .gitignore
-echo .DS_Store >> .gitignore
+# 1. Create proper .gitignore
+@"
+node_modules/
+.expo/
+package-lock.json
+.DS_Store
+*.log
+android/
+ios/
+"@ | Out-File -FilePath .gitignore -Encoding utf8
